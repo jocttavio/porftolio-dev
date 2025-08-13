@@ -1,0 +1,21 @@
+'use client'
+import React, {useRef} from 'react'
+import LiIcon from './LiIcon'
+import {motion } from 'framer-motion'
+export const Details = ({position, company, companyLink,time, address, work} :{position: string, company: string, companyLink: string, time: string, address: string, work: string}) => {
+  const ref =  useRef<HTMLLIElement | null>(null) as React.RefObject<HTMLLIElement>;
+  return (
+    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+      <LiIcon reference={ref} />
+      <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, type: 'spring' }}
+      >
+        <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; <a href={companyLink} target="_blank" rel="noopener noreferrer" className='text-primary capitalize'>@{company}</a></h3>
+            <span className='capitalize font-medium text-dark/75'>{time} | {address}</span>
+            <p className='font-medium w-full'>{work}</p>
+      </motion.div> 
+    </li>
+  )
+}

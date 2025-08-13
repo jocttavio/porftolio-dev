@@ -28,7 +28,7 @@ export default function Hero() {
               {...fadeIn}
               transition={{ delay: 0.8 }}
             >
-              John Doe
+              Jesus Octavio
             </motion.span>
           </motion.h1>
           <motion.p 
@@ -36,7 +36,7 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            Full Stack Developer | UI/UX Enthusiast | Open Source Contributor
+            Full Stack Developer
           </motion.p>
           <motion.div 
             className="flex justify-center space-x-4 mb-8"
