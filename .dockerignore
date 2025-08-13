@@ -1,0 +1,13 @@
+# Evita copiar dependencias locales (se instalan en el contenedor)
+node_modules
+dist
+
+# Archivos de control de versiones
+.git
+.gitignore
+
+# Archivos del editor
+.vscode
+.DS_Store
+*.log
+.env
