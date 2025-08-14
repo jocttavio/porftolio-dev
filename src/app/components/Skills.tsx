@@ -8,7 +8,9 @@ const Skills = () => {
       <motion.h2 className="text-3xl font-bold mb-4 text-center" {...fadeInUp}>
         Technologies
       </motion.h2>
-      <p>Description</p>
+      <p className="text-lg tracking-wide">Proficient in a variety <span className="text-primary font-bold"> of modern </span> technologies. My way of working involves leveraging these tools to build efficient and scalable applications.
+      <span className="text-primary font-bold"> My stack includes:</span>
+      </p>
       <div className="grid grid-cols-2 gap-8 mt-4">
         <motion.article
           key={"frontend"}
