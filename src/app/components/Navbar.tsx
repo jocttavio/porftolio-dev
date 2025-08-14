@@ -15,12 +15,12 @@ export default function Navbar() {
 
   const menuItems = [
     { href: '/', label: 'Home' },
-    { href: '/experiences', label: 'Experiences' },
+    { href: '/experience', label: 'Experience' },
     { href: '/projects', label: 'Projects' },
-    { href: '/skills', label: 'Skills' },
+    { href: '/technologies', label: 'Technologies' },
     { href: '/about', label: 'About' },
-    { href: '/blogs', label: 'Blogs' },
-    { href: '/contact', label: 'Contact' },
+    // { href: '/blogs', label: 'Blogs' },
+    // { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
-            Devfolio&trade;
+            Devoctavio&trade;
           </Link>
           
           {/* Desktop Menu */}

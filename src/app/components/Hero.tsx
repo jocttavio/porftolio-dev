@@ -8,7 +8,7 @@ import { fadeInUp, fadeIn, scaleIn } from '@/utils/animations';
 
 export default function Hero() {
   return (
-    <section className="py-28">
+    <section className="pb-28 pt-12">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div 
@@ -16,7 +16,7 @@ export default function Hero() {
             {...scaleIn}
             transition={{ delay: 0.2 }}
           >
-            <Image src="/perfil.jpeg" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary" />
+            <Image src="/profile.jpg" alt="Profile" width={200} height={200} className="rounded-full mb-4 w-52 h-52 object-cover ring-2 ring-primary" priority/>
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"
