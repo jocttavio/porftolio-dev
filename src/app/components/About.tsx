@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 const About = () => {
   return (
-    <div className="container max-w-5xl mx-auto px-4 py-16">
+    <div className="container max-w-5xl mx-auto px-4 py-16" id="about">
       <motion.h2 className="section-title" {...fadeInUp}>
         About Me
       </motion.h2>

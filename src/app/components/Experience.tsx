@@ -9,7 +9,7 @@ export const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <section>
+    <section id="experience">
       <h2 className="font-bold text-4xl mb-32 w-full text-center">
         Experience
       </h2>

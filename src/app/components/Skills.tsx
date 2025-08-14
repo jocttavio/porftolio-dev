@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, cardHoverSmall } from "@/utils/animations";
 const Skills = () => {
   return (
-    <section className="container max-w-5xl mx-auto px-4 pb-20">
+    <section className="container max-w-5xl mx-auto px-4 pb-20" id="skills">
       <motion.h2 className="text-3xl font-bold mb-4 text-center" {...fadeInUp}>
         Technologies
       </motion.h2>

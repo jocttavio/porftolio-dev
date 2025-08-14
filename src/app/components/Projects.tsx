@@ -8,7 +8,7 @@ import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
 
 export default function Projects() {
   return (
-    <section className="py-20">
+    <section className="py-20" id="projects">
       <div className="container max-w-5xl mx-auto px-4">
         <motion.h2 
           className="text-3xl font-bold mb-12 text-center"
@@ -28,7 +28,9 @@ export default function Projects() {
               key={project.title}
               className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
               variants={fadeInUp}
-              {...cardHoverSmall}
+              {...{...cardHoverSmall,
+                    transition: { type: "spring", stiffness: 100 },
+              }}
             >
               <div className="relative aspect-video mb-4 rounded-lg overflow-hidden">
                 <Image
