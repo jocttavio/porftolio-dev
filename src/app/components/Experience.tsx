@@ -13,7 +13,7 @@ export const Experience = () => {
       <h2 className="font-bold text-4xl mb-32 w-full text-center">
         Experience
       </h2>
-      <div className="w-[75%] mx-auto relative" ref={ref}>
+      <div className="md:w-[75%] mx-auto relative" ref={ref}>
         <motion.div
           className="absolute xl:left-28 left-9 top-0 w-[4px] h-full bg-dark origin-top"
           style={{ scaleY: scrollYProgress }}

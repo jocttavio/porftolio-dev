@@ -11,7 +11,7 @@ const Skills = () => {
       <p className="text-lg tracking-wide">Proficient in a variety <span className="text-primary font-bold"> of modern </span> technologies. My way of working involves leveraging these tools to build efficient and scalable applications.
       <span className="text-primary font-bold"> My stack includes:</span>
       </p>
-      <div className="grid grid-cols-2 gap-8 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
         <motion.article
           key={"frontend"}
           className="bg-white dark:bg-dark/70 rounded-lg shadow-md p-4 "
@@ -24,7 +24,7 @@ const Skills = () => {
           <h3 className="text-center text-xl font-bold text-primary">
             Frontend
           </h3>
-          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+          <ul className="grid grid-cols-3 md:grid-cols-4 gap-4 mt-4">
               <li className="flex justify-center items-center flex-col">
               <img
                 src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
@@ -105,7 +105,7 @@ const Skills = () => {
             transition: { type: "spring", stiffness: 100 },
           }}>
           <h3 className="font-bold text-xl text-primary text-center">Backend</h3>
-          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+          <ul className="grid grid-cols-3 md:grid-cols-4 gap-4 mt-4">
             <li className="flex justify-center items-center flex-col">
               <img
                 src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png"
@@ -171,7 +171,7 @@ const Skills = () => {
             transition: { type: "spring", stiffness: 100 },
           }}>
           <h3 className="font-bold text-primary text-xl text-center">Tools</h3>
-          <ul className="grid grid-cols-1 md:grid-cols-4 mt-4  gap-4">
+          <ul className="grid grid-cols-3 md:grid-cols-4 mt-4  gap-4">
             <li className="flex justify-center items-center flex-col">
               <img
                 src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
@@ -221,7 +221,7 @@ const Skills = () => {
             transition: { type: "spring", stiffness: 100 },
           }}>
           <h3 className="font-bold text-primary text-xl text-center">Learning</h3>
-          <ul className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-4">
+          <ul className="grid grid-cols-3 md:grid-cols-4 mt-4 gap-4">
             <li className="flex justify-center items-center flex-col">
               <img
                 src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/strapi.png"

@@ -25,7 +25,7 @@ export default About;
 const BentoBox = () => {
   const softSkills = ['Adaptability', 'Communication', 'Problem-solving', 'Teamwork', 'Efficiency', 'Analytical Thinking', 'Results-oriented', 'Continuous Improvement'];
   return (
-    <motion.div className="grid grid-cols-2 gap-8">
+    <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2">
       <div>
         <motion.div
           className="flex justify-center items-center"
@@ -43,7 +43,7 @@ const BentoBox = () => {
         </motion.div>
         <motion.section {...fadeIn} transition={{ delay: 0.6 }}>
           <motion.div
-            className="max-w-3xl mx-auto p-6"
+            className="max-w-3xl mx-auto  md:p-6"
             variants={staggerContainer}
             initial="initial"
             animate="animate"
