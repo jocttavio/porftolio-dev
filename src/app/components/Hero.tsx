@@ -12,11 +12,11 @@ export default function Hero() {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div 
-            className='flex justify-center items-center mb-4 bg-white'
+            className='flex justify-center items-center mb-4'
             {...scaleIn}
             transition={{ delay: 0.2 }}
           >
-            <Image src="/main_profile.png" alt="Profile" width={200} height={200} className="rounded-full mb-4 w-52 h-52 object-contain bg-center bg-cover ring-2 ring-primary" priority/>
+            <Image src="/main_profile.png" alt="Profile" width={200} height={200} className="rounded-full mb-4 w-52 h-52 object-cover ring-2 ring-primary" priority/>
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"
