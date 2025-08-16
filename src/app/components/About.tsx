@@ -57,7 +57,7 @@ const BentoBox = () => {
             initial="initial"
             animate="animate"
           >
-            <motion.h2 className="text-thin text-gray-400" {...fadeInUp}>
+            <motion.h2 className="text-thin text-dark/75" {...fadeInUp}>
               Education
             </motion.h2>
             <motion.div
@@ -67,9 +67,9 @@ const BentoBox = () => {
               }}
             >
               <h3 className="text-xl font-semibold mb-2">
-                Bachelor of Science in Computer Science
+                Bachelor's degree in Computer Systems Engineering
               </h3>
-              <p className="text-primary mb-2">University Name • 2014 - 2018</p>
+              <p className="text-primary mb-2"> Tecnológico Nacional de México Campus Acapulco  &#40;TECNM&#41; • 2019 - 2024</p>
               <p className="text-secondary">
                 Graduated with honors. Focused on software engineering and web
                 development.
