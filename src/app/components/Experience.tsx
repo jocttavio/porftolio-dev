@@ -10,7 +10,7 @@ export const Experience = () => {
   });
   return (
     <section id="experience">
-      <h2 className="font-bold text-4xl mb-32 w-full text-center">
+      <h2 className="font-bold text-4xl w-full text-center mb-12">
         Experience
       </h2>
       <div className="md:w-[75%] mx-auto relative" ref={ref}>
