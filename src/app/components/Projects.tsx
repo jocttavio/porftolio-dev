@@ -1,6 +1,6 @@
 'use client'
 
-import { projects } from '@/contents/projects';
+import { projects } from '../constant/projects';
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
@@ -18,7 +18,7 @@ export default function Projects() {
         </motion.h2>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2  gap-8"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
@@ -65,7 +65,7 @@ export default function Projects() {
                 {project.technologies.map((tech) => (
                   <motion.span
                     key={tech}
-                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                    className="px-3 py-1 bg-primary/10 text-primary rounded-xl text-sm"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
