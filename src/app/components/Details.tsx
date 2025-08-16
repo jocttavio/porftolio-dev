@@ -13,7 +13,7 @@ export const Details = ({position, company, companyLink,time, address, work} :{p
       transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; <a href={companyLink} target="_blank" rel="noopener noreferrer" className='text-primary capitalize'>@{company}</a></h3>
-            <span className='capitalize font-medium text-dark/75'>{time} | {address}</span>
+            <span className='capitalize font-medium text-dark/75 dark:text-white/75'>{ time} </span>
             <p className='font-medium w-full'>{work}</p>
       </motion.div> 
     </li>
