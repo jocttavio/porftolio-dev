@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { FloatingNav } from "./components/FloatingNav";
 import { FaHome, FaCogs , FaProductHunt, FaStar, FaChild  } from "react-icons/fa";
+import UptoStartButton from "./components/UptoStartButton";
 
 // import Footer from "./components/Footer";
 
@@ -36,8 +37,9 @@ export default function RootLayout({
         <ThemeProvider>
           {/* <Navbar /> */}
           <FloatingNav navItems={menuItems} />
-          <main className="min-h-screen pt-24">
+          <main className="min-h-screen pt-24 relative">
             {children}
+            <UptoStartButton />
           </main>
           <Footer />
         </ThemeProvider>

@@ -1,0 +1,35 @@
+
+  .upto_start {
+    /* position: relative; */
+    /* padding: 1rem 2rem; */
+    /* background: #111;  */
+    color: white;
+    font-family: sans-serif;
+    /* border-radius: 8px; */
+    /* z-index: 0; */
+  }
+
+  /* Animated border using pseudo-element */
+  .upto_start::before {
+    position: absolute;
+    content: "";
+    inset: -3px; /* Controls border thickness */
+    border-radius: inherit;
+    padding: 3px;
+    background: linear-gradient(90deg, #FFFF, #0055FF, #3333ff, #00BFFF, #3399FF, #ffcc00, #007AFF);
+    background-size: 300% 300%;
+    animation: borderMove 6s linear infinite;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  @keyframes borderMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
