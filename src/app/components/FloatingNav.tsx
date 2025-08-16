@@ -106,7 +106,7 @@ export const FloatingNav = ({ navItems }: { navItems: NavItem[] }) => {
         <nav className="flex flex-col w-full">
           <div className="flex justify-around">
             <motion.button
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              className="md:hidden p-2 rounded-lg dark:text-neutral-50  text-neutral-600   hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               onClick={toggleMobileMenu}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -114,7 +114,7 @@ export const FloatingNav = ({ navItems }: { navItems: NavItem[] }) => {
               {isMobileMenuOpen ? (
                 <XMarkIcon className="h-6 w-6" />
               ) : (
-                <Bars3Icon className="h-6 w-6" />
+                <Bars3Icon className="h-6 w-6 " />
               )}
             </motion.button>
             <div className="flex items-center space-x-2">
